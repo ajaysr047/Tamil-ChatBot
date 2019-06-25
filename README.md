@@ -12,6 +12,5 @@ A simple tamil-chatbot using textblob translation.
     sudo apt-get install python-pyqt5 
     pyuic5 -x chatUI.ui -o layout.py
     
-## Errors
-    Number input
-    Other Language input
+
+
