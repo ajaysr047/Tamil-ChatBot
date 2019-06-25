@@ -1,12 +1,12 @@
 # Tamil-ChatBot
 A simple tamil-chatbot
 
-##Packages used :
+# Packages used :
     chatterbot
     textblob
     pyqt5
     
-##Useful Commands
+## Useful Commands
     pip install chatterbot
     pip install -U textblob
     sudo apt-get install python-pyqt5 
