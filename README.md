@@ -1,7 +1,7 @@
 # Tamil-ChatBot
 A simple tamil-chatbot
 
-# Packages used :
+## Packages used :
     chatterbot
     textblob
     pyqt5
