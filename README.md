@@ -1,5 +1,5 @@
 # Tamil-ChatBot
-A simple tamil-chatbot
+A simple tamil-chatbot using textblob translation.
 
 ## Packages used :
     chatterbot
@@ -11,3 +11,7 @@ A simple tamil-chatbot
     pip install -U textblob
     sudo apt-get install python-pyqt5 
     pyuic5 -x chatUI.ui -o layout.py
+    
+## Errors
+    Number input
+    Other Language input
