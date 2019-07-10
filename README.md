@@ -10,6 +10,7 @@ A simple tamil-chatbot using textblob translation.
     pip install chatterbot
     pip install -U textblob
     sudo apt-get install python-pyqt5 
+To convert .ui file to .py
     pyuic5 -x chatUI.ui -o layout.py
     
 
