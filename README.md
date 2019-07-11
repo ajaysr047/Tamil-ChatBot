@@ -6,7 +6,8 @@ A simple tamil-chatbot using textblob translation.
     textblob
     pyqt5
     
-   python version:3.7.3
+   python version:3.x
+   pip version: 19.X
     
 ## Useful Commands
     pip install chatterbot
