@@ -25,7 +25,8 @@ conv2 = open('chat2.txt', 'r').readlines()
 trainer.train(conv2)
 conv3 = open('chat3.txt', 'r').readlines()
 trainer.train(conv3)
-
+conv4 = open('chat4.txt', 'r').readlines()
+trainer.train(conv4)
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
@@ -67,13 +68,17 @@ class Ui_MainWindow(object):
 
         userInp = str(textInp)
         userInp = TextBlob(userInp)
-        userInp =str( userInp.translate(from_lang='ta', to='en'))
-        print(userInp)
-        botResp = chatbot.get_response(userInp)
-        botResp = TextBlob(str(botResp))
-        botResp =str( botResp.translate(from_lang='en', to='ta'))
-        self.textBrowser.append('You: '+ textInp)
-        self.textBrowser.append('Bot: '+ botResp)
+        if userInp.detect_language() !='ta' :
+            self.textBrowser.append('You: '+ textInp)
+            self.textBrowser.append('Bot: தவறான உள்ளீடு')    
+        else :    
+            userInp =str( userInp.translate(from_lang='ta', to='en'))
+            print(userInp)
+            botResp = chatbot.get_response(userInp)
+            botResp = TextBlob(str(botResp))
+            botResp =str( botResp.translate(from_lang='en', to='ta'))
+            self.textBrowser.append('You: '+ textInp)
+            self.textBrowser.append('Bot: '+ botResp)
         
 
 if __name__ == "__main__":
