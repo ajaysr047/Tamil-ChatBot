@@ -7,6 +7,7 @@ A simple tamil-chatbot using textblob translation.
     pyqt5
     
    python version:3.x
+   
    pip version: 19.X
     
 ## Useful Commands
